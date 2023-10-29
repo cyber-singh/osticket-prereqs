@@ -325,3 +325,7 @@ Select a principal
 <p>
   
   Congrats! You have now successfully installed and setup osTicket!
+
+
+  <h3 align = "right">Next Tutorial - <a href = "https://github.com/Cyber-singh/post-install-config">osTicket: Post-Installation Configuration</a></h3>
+
