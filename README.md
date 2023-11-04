@@ -29,91 +29,111 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - osTicket v1.15.8
 - Download files [HERE](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 
+<p>
 
 <h2>Installation Steps</h2>
-
-
+ 
 - To get started, the first thing you need to do is creat a virtual machine in the [Azure Portal](https://portal.azure.com/). Configure your virtual machine with Windows 10 Pro, specifically version 22H2. Remember, it's a good idea to set up the virtual machine with at least 2 vCPUs and 16 GBs of RAM.
 
  - After you've set up your virtual machine, the next step is to connect to it using the public IP address assigned to the VM. You can do this by using the Remote Desktop Connection application.
 
 **NOTE: If you don't know how to create a virtual machine click [HERE](https://www.youtube.com/@cyber_singh)**
+
 </p>
+
 <br />
 
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/15e5f021-5a24-413b-9976-7a42fbf5da30"/>
 </p>
-<p>
-<p>
+
+<p> 
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/a4d0800d-5c91-4348-b2da-665a3ba1045a"/>
 </p>
-<p>
-  
-- Once you've successfully connected to your virtual machine, the next step is to navigate to the Control Panel. Inside the Control Panel, locate the "Programs" section, and then choose "Turn Windows features on and off.".
+
+****
 
 <p>
-<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/07f93b59-1b7e-472e-a6d4-9897f753836e"/>
-</p>
-<p>
-  
-<p>
-<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/be50256c-8ffe-4ac8-a8d5-d0ebe2e297c8"/>
-</p>
-<p>
-  
- you have to enable IIS in Windows with CGI and Common HTTP Features, to do so follow these steps:
-
-1. Check the box for "[X] IIS" and expand it.
-2. Inside IIS, expand "World Wide Web Services."
-3. Under "Application Development Features," check the box for "[X] CGI."
-4. Collapse the "Application Development Features" section.
-5. Expand "Common HTTP Features."
-6. Make sure that every option under "Common HTTP Features" is checked.
-  
-<p>
-<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/b6cd3416-0869-49e5-a993-e7606e6295be"/>
-</p>
-<p>
-  
-<p>
-<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/ef79d590-49a4-4f1a-ba41-f89b2a038bbc"/>
-</p>
-<p>
-  
-**NOTE: Make sure all Common HTTP Features are checked.**
  
-  - To verify that IIS is installed and enabled, open a web browser of your choice and enter "127.0.0.1" in the address bar. The resulting page should resemble the following.. 
-  
+- Once you've successfully connected to your virtual machine, the next step is to navigate to the Control Panel. Inside the Control Panel, locate the "Programs" section, and then choose "Turn Windows features on and off."
+
+<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/07f93b59-1b7e-472e-a6d4-9897f753836e"/>
+
+
+<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/be50256c-8ffe-4ac8-a8d5-d0ebe2e297c8"/>
+
+</p>  
+
 <p>
+ 
+****
+  
+ - In the **"Turn Windows features on and off"** menu, make sure to install/enable **"IIS (Internet Information Services)"** with CGI and Common HTTP Features, to do so follow these steps:
+
+1. Check the box for **"[X] IIS"** and expand it.
+2. Inside **IIS**, expand **"World Wide Web Services"**.
+3. Under **"Application Development Features"** check the box for **"[X] CGI"**.
+4. Collapse the **"Application Development Features"** section.
+5. Expand **"Common HTTP Features"**.
+6. Make sure that every option under **"Common HTTP Features"** is checked.
+
+  
+<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/b6cd3416-0869-49e5-a993-e7606e6295be"/>
+
+  
+<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/ef79d590-49a4-4f1a-ba41-f89b2a038bbc"/>
+
+  
+**NOTE:** Make sure all **Common HTTP** Features are checked. 
+ 
+ - To verify that **IIS** is installed and enabled, open a web browser of your choice and enter **"127.0.0.1"** in the address bar. The resulting page should resemble the following..
+  
+
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/a0d5d946-9e80-4671-9e49-a3ff6e1db261"/>
+
 </p>
+
+  ****
+  
+ <h1>Now that IIS is enabled, here are the steps to follow:</h1>
+
+**Install PHP Manager for IIS:** From the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6), download [PHP Manager for IIS](https://drive.google.com/file/d/1RHsNd4eWIOwaNpj3JW4vzzmzNUH86wY_/view?usp=drive_link). Run the installation wizard and complete the installation.
+
 <p>
-  
-  
-  
-  
- - Now that the IIS is enabled, From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-  Go through the install wizard and complete the install.
-  
- - Next from the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
-  
- - Create a folder in the C drive called PHP.
-  
- - From the Installation Files, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
-  
-  !! ATTENTION !!
-If this appears, choose to “Keep” the file:
-  
+ 
+**Install the Rewrite Module:** From the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6), download [Rewrite Module](https://drive.google.com/file/d/1tIK9GZBKj1JyUP87eewxgdNqn9pZmVmY/view?usp=drive_link).
+Run the installation to set up the Rewrite Module.
+
+</p>
+
 <p>
+ 
+**Create a PHP Folder:** Create a folder named **"PHP"** in the C drive **(C:\PHP)**.
+
+</p>
+
+<p>
+
+**Download and Unzip PHP 7.3.8:** From the [Installation Files](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6), download [PHP 7.3.8](https://drive.google.com/file/d/1snNMtLdCOpMtkCyD4mvl9yOOmvVIp9fP/view?usp=drive_link). Unzip the contents of the downloaded file into the **"C:\PHP"** directory.
+
+</p>
+  
+
+**!! ATTENTION !!** If this appears, choose to “Keep” the file.
+
+
+<p>
+   
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/8c263b38-e7f8-407f-97f5-2c182dd44c25"/>
+
 </p>
+
 <p>
-  
-<p>
-<img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/d1e5b1ff-5e6d-4d2b-af8d-1207991db39c"/>
+
+ <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/d1e5b1ff-5e6d-4d2b-af8d-1207991db39c"/>
+
 </p>
-<p>
+
 
  - Once you have downloaded and extracted the zip file into the PHP folder on the C drive, download and install the VC_redist.x86.exe from the installation files. Go through the setup wizard to finish setting up and installing the VC_redist.x86.exe. 
   
