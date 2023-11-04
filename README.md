@@ -33,9 +33,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 
-- The first thing you are going to do is create a virtual machine by going to [Azure Portal](https://portal.azure.com/). Setup your virtual machine with Windows 10 Pro, version 22H2. Note, you will want to create a virtual machine with atleast 2 vcpus and 16 gbs of memory.
+- To get started, the first thing you need to do is creat a virtual machine in the [Azure Portal](https://portal.azure.com/). Configure your virtual machine with Windows 10 Pro, specifically version 22H2. Remember, it's a good idea to set up the virtual machine with at least 2 vCPUs and 16 GBs of RAM.
 
- - Once you have created your virtual machine you will want to conncet to it by using the public ip address the vm is setup with. You will connect using the remote desktop connection app. 
+ - After you've set up your virtual machine, the next step is to connect to it using the public IP address assigned to the VM. You can do this by using the Remote Desktop Connection application.
+
+**NOTE: If you don't know how to create a virtual machine click [HERE](https://www.youtube.com/@cyber_singh)**
 </p>
 <br />
 
@@ -48,7 +50,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
   
-- Once you have connected to your virtual machine you will want to go to your control panel. From the control panel open up programs. Select, Turn Windows features on and off.
+- Once you've successfully connected to your virtual machine, the next step is to navigate to the Control Panel. Inside the Control Panel, locate the "Programs" section, and then choose "Turn Windows features on and off.".
 
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/07f93b59-1b7e-472e-a6d4-9897f753836e"/>
@@ -60,10 +62,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
   
- - You will want to install / enable IIS in Windows with CGI and Common HTTP Features
- - World Wide Web Services -> Application Development Features -> 
-[X] CGI
-[X] Common HTTP Features
+ you have to enable IIS in Windows with CGI and Common HTTP Features, to do so follow these steps:
+
+1. Check the box for "[X] IIS" and expand it.
+2. Inside IIS, expand "World Wide Web Services."
+3. Under "Application Development Features," check the box for "[X] CGI."
+4. Collapse the "Application Development Features" section.
+5. Expand "Common HTTP Features."
+6. Make sure that every option under "Common HTTP Features" is checked.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/b6cd3416-0869-49e5-a993-e7606e6295be"/>
@@ -75,10 +81,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
   
-***NOTE*** Make sure all Common HTTP Features are checked.
+**NOTE: Make sure all Common HTTP Features are checked.**
  
- To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 
-  It should look something like this. 
+  - To verify that IIS is installed and enabled, open a web browser of your choice and enter "127.0.0.1" in the address bar. The resulting page should resemble the following.. 
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/a0d5d946-9e80-4671-9e49-a3ff6e1db261"/>
