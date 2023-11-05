@@ -249,7 +249,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 4. Look for **osTicket**.
 
-5. On the right side, click **"Browse*:80"**
+5. On the right side, click **"Browse** ***:80"**
 
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/a3268538-337b-4c61-9f14-a38962a8f4f0"/>
@@ -258,7 +258,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <br>
   
- - Some extensions are not enabled on the osTicket browser.
+ - Some extensions are not enabled on the **osTicket** browser.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/0eddd10b-c2e1-4d6d-9b50-d89b7c21477f"/>
@@ -277,7 +277,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 4. Inside the **"PHP Manager"**, click on **"Enable or disable an extension"**.
 
-This will allow you to manage and enable the necessary PHP extensions for your osTicket application.
+This will allow you to manage and enable the necessary **PHP extensions** for your **osTicket** application.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/81ac4b17-89d9-44fe-9663-4ae39c9f1f22"/>
@@ -323,7 +323,7 @@ After renaming the file to **"ost-config.php"**, follow these steps:
 
 5. Choose **"Remove all inherited permissions from this object"**.
 
-By following these steps, you'll customize the security settings for the "ost-config.php" file.
+By following these steps, you'll customize the security settings for the **"ost-config.php"** file.
 
 ****
   
