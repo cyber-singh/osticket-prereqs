@@ -92,7 +92,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
  <p>
-**NOTE:** Make sure all **Common HTTP** Features are checked. 
+  
+**NOTE: Make sure all **Common HTTP** Features are checked.**
+  
 </p>
 <br>
 
@@ -153,7 +155,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  - Download and install [MySQL](https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view?usp=drive_link). Run the typical setup wizard and then after installation opt out for standard configuration.
 <br>
 
- - Make the new root password: Password1
+ - Make the new root password: **Password1**
 </p>
 
 <p>
@@ -309,7 +311,7 @@ This will allow you to manage and enable the necessary PHP extensions for your o
 
 ****  
 
-After renaming the file to "ost-config.php," follow these steps:
+After renaming the file to **"ost-config.php"**, follow these steps:
 
 1. Right-click on the **"ost-config.php"** and go to **"Properties"**.
 
@@ -395,34 +397,50 @@ By following these steps, you'll customize the security settings for the "ost-co
 
 <p>
   
- - Once HeidiSQL is open, you should proceed to create a new session within the application. 
+ - Once **HeidiSQL** is open, you should proceed to create a new session within the application. 
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/18da5c0b-a0cc-4207-8780-958f95d0ae44"/>
 </p>
+<br>
+
 <p>
   
-  We want to make sure the username is root and the password is Password1.
+ - Ensure that you set the username as **"root"** and the password as **"Password1"** during the configuration of the new session in **HeidiSQL**.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/42da86a1-37d1-4026-9824-a4bc31818b5b"/>
 </p>
+****
+
 <p>
   
-  Once we are connected to the session we will go back to the browser to finish setting everything up. Under the Database Settings in the browser the username will be root and the password will be Password1.
+ - After successfully connecting to the session in HeidiSQL, return to the browser to complete the setup. In the "Database Settings" section of the browser, use "root" as the username and "Password1" as the password.
+
+<br>
   
-  We will now create a new database within HeidiSQL. In Heidi right click on the left side where is says "Unnamed", select "create new", and then select "database". Name the new database osTicket. Once we have the new database setup go back to the osTicket browser and under MySQL Database type in osTicket.
-  
+<h3>To create a new database in HeidiSQL and link it to osTicket, follow these steps:</h3>
+
+1. In **HeidiSQL**, right-click on the section on the left where it says **"Unnamed"**.
+
+2. Select **"Create New"** and then choose **"Database"**
+
+3. Name the new database **"osTicket"**.
+
+ - Once you've set up the new **"osTicket"** database in **HeidiSQL**, return to the osTicket browser and, under **"MySQL Database"**, type in **"osTicket"**. This will connect your osTicket installation to the newly created database.
+
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/a200f0e0-2994-48de-a8b5-bb84725ad026"/>
 </p>
+****
+
 <p>
+
+ - As the final step, delete the **"setup"** folder from your system. Navigate to **"C:\inetpub\wwwroot\osTicket"** and delete the **"setup"** folder. Ensure that you only delete the **"setup"** folder and nothing else. This cleanup step is important to secure your **osTicket** installation.
+
+<br>
   
-  The last step is to do some clean up. We will want to delete the setup folder in our system. 
-  -Delete: C:\inetpub\wwwroot\osTicket\setup
-  Only delete the setup folder and nothing else.
-  
-  We then will want to set the permissions back to "Read" only in the ost-config.php file.
+ - After deleting the **"setup"** folder, you should set the permissions for the **"ost-config.php"** file back to **"Read-only"** This helps maintain the security of your **osTicket** installation.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/e7796cec-114b-4c88-b828-7461f1a4d9b1"/>
@@ -432,16 +450,19 @@ By following these steps, you'll customize the security settings for the "ost-co
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/c769cd0d-a3a3-49fe-aeba-59d49733ab37"/>
 </p>
+
+****
+
 <p>
   
-  The last step after that is to login to osTicket on the browser.
+ - After completing the setup and making the necessary changes, the final step is to log in to **osTicket** through your web browser. You can now access and use **osTicket** to manage your support tickets and customer inquiries.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/9c45c9dc-30c4-479c-bac3-1d6bca92ead4"/>
 </p>
 <p>
   
-  Congrats! You have now successfully installed and setup osTicket!
+<h3>Congratulations! You have successfully completed the installation and setup of osTicket</h3>.
 
 
   <h3 align = "right">Next Tutorial - <a href = "https://github.com/Cyber-singh/post-install-config">osTicket: Post-Installation Configuration</a></h3>
