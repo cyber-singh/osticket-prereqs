@@ -15,7 +15,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10 (21H2)
 
 <h2>List of Prerequisites</h2>
 
@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
  
-- To get started, the first thing you need to do is creat a virtual machine in the [Azure Portal](https://portal.azure.com/). Configure your virtual machine with Windows 10 Pro, specifically version 22H2. Remember, it's a good idea to set up the virtual machine with at least 2 vCPUs and 16 GBs of RAM.
+- To get started, the first thing you need to do is create a virtual machine in the [Azure Portal](https://portal.azure.com/). Configure your virtual machine with Windows 10 Pro, specifically version 22H2. Remember, it's a good idea to set up the virtual machine with at least 2 vCPUs and 16 GBs of RAM.
 
  - After you've set up your virtual machine, the next step is to connect to it using the public IP address assigned to the VM. You can do this by using the Remote Desktop Connection application.
 
@@ -55,7 +55,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
  
-- Once you've successfully connected to your virtual machine, the next step is to navigate to the Control Panel. Inside the Control Panel, locate the "Programs" section, and then choose "Turn Windows features on and off."
+- Once you've successfully connected to your **virtual machine**, the next step is to navigate to the **Control Panel**. Inside the Control Panel, locate the **"Programs"** section, and then choose **"Turn Windows features on and off"**.
 
 <br>
 
@@ -70,7 +70,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
   
- - In the **"Turn Windows features on and off"** menu, make sure to install/enable **"IIS (Internet Information Services)"** with CGI and Common HTTP Features, to do so follow these steps:
+ - In the **"Turn Windows features on and off"** menu, make sure to install/enable **"IIS (Internet Information Services)"** with **CGI** and **Common HTTP Features**, to do so follow these steps : 
 
 1. Check the box for **"[X] IIS"** and expand it.
 2. Inside **IIS**, expand **"World Wide Web Services"**.
@@ -175,7 +175,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
  
- - Now that you've downloaded and installed the necessary files, search for "IIS" in the Windows search bar. Open IIS as an administrator, and the program should appear like this..
+ - Now that you've downloaded and installed the necessary files, search for **"IIS(Internet Information Services)"** in the Windows search bar. Open IIS as an administrator, and the program should appear like this..
   
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/fa2bc7e1-9e7a-4a8b-9239-375b781de6ff"/>
 </p>
@@ -204,7 +204,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>
 
- - To set up PHP, provide the path to the PHP executable file (php-cgi.exe). Navigate to the C Drive, then open the PHP folder and select the php-cgi file.
+ - To set up **PHP**, provide the path to the PHP executable file **(php-cgi.exe)**. Navigate to the **C Drive**, then open the **PHP folder** and select the **php-cgi** file.
   
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/d6643c4f-b1e1-4f50-b3a4-dff693e2c177"/>
@@ -411,13 +411,13 @@ By following these steps, you'll customize the security settings for the **"ost-
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/42da86a1-37d1-4026-9824-a4bc31818b5b"/>
 </p>
-****
 
 <p>
   
  - After successfully connecting to the session in HeidiSQL, return to the browser to complete the setup. In the "Database Settings" section of the browser, use "root" as the username and "Password1" as the password.
 
-<br>
+****
+
   
 <h3>To create a new database in HeidiSQL and link it to osTicket, follow these steps:</h3>
 
@@ -462,7 +462,11 @@ By following these steps, you'll customize the security settings for the **"ost-
 </p>
 <p>
   
-<h3>Congratulations! You have successfully completed the installation and setup of osTicket</h3>.
+<h3>Congratulations!</h3>.
+
+ - You have successfully completed the installation and setup of osTicket, an open-source help desk ticketing system.
+ - Your osTicket installation is ready to manage support tickets and customer inquiries.
+ - To continue, you can proceed to the next tutorial for post-installation configuration by following the link.
 
 
   <h3 align = "right">Next Tutorial - <a href = "https://github.com/Cyber-singh/post-install-config">osTicket: Post-Installation Configuration</a></h3>
