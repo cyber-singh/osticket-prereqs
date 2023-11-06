@@ -463,12 +463,13 @@ By following these steps, you'll customize the security settings for the **"ost-
 </p>
 <p>
   
-<h3>Congratulations!</h3>.
+<h3>Congratulations!</h3>
 
  - You have successfully completed the installation and setup of osTicket, an open-source help desk ticketing system.
  - Your osTicket installation is ready to manage support tickets and customer inquiries.
  - To continue, you can proceed to the next tutorial for post-installation configuration by following the link.
 
+<br>
 
   <h3 align = "right">Next Tutorial - <a href = "https://github.com/Cyber-singh/post-install-config">osTicket: Post-Installation Configuration</a></h3>
 
