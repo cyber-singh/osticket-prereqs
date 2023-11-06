@@ -432,6 +432,7 @@ By following these steps, you'll customize the security settings for the **"ost-
 <p>
 <img src="https://github.com/cyber-singh/osticket-prereqs/assets/149118027/a200f0e0-2994-48de-a8b5-bb84725ad026"/>
 </p>
+
 ****
 
 <p>
